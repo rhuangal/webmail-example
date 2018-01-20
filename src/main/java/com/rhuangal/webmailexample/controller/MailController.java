@@ -24,9 +24,9 @@ public class MailController {
     protected String process(MailForm mailForm) {
         try {
             sendEmail(mailForm);
-            return "Email Sent!";
+            return "Correo enviado!";
         } catch (Exception ex) {
-            return "Error in sending email: " + ex;
+            return "Error enviando correo: " + ex;
         }
     }
 
